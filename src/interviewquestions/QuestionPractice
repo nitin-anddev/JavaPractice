@@ -1,0 +1,146 @@
+1. Is Java platform independent if yes then how?
+    Yes Java is a platform independent language since in Java we write all our code in .java files
+    these files are then compiled by java compiler and .class files will be generated which contains bytecode.
+    This bytecode is platform independent and only needs JVM to execute on any type of machine.
+    JVM will interpret this bytecode to machine readable code or machine code.
+
+    [.java --> Compiler() --> .class --> JVM --> machine code]
+
+2. Top Java features
+    Simple: Syntax is simple
+    Platform independent
+    Interpreted
+    Robust
+    Object-Oriented
+    Secured
+    High Performance
+    Dynamic
+    Multi threaded
+    Architecture Neutral
+
+3. What is JVM?
+    JVM(Java Virtual Machine) is an abstract machine[it receives inputs and produces outputs based on predefined rules].
+    It is a specification that provides runtime environment in which java bytecode(.class files) can be executed.
+
+    What it does?
+    --> Loads code
+    --> Verifies code
+    --> Executes code
+    --> Provides Runtime Environment(JRE)
+
+    JVM Architecture
+    --> Class Loader: used to load class files
+                1. Bootstrap ClassLoader:
+                2. Extension ClassLoader:
+                3. System/Application ClassLoader:
+    --> Class(Method) Area(class structures, method data and method code)
+    --> Heap Memory(runtime data and object allocation)
+    --> Stack(stores frames and partial results)
+    --> PC Register(stores address of the jvm instruction currently being executed)
+    --> Native Method stack(store all native methods used in the program)
+
+    --> Execution Engine[Virtual processor, Interpreter, Just-in-time-compiler]
+
+4. Difference between JVM, JRE and JDK.
+    JVM - Java Virtual Machines: converts byte code to machine readable code. It is a part of JRE
+    JRE - Java Runtime Environment: provides environment to execute java programs.
+    JDK - Java Development Kit: contains development tools and JRE
+
+5. Difference between Java & C++
+    C++: platform dependent, mainly used for system programming, nearer to hardware, supports global and namespace scope,
+            no thread support & documentation comment, object-oriented but no single root hierarchy, individual inheritance tree
+    Java: platform independent, mainly used for application programming, not so near to hardware, doesn't support globla and namespace scope
+            no support for pointers, goto, call by reference, structures and unions, multiple inheritance & virtual functions,
+            object oriented but with single root hierarchy since everything derives from single class(java.lang.Object)
+
+6. Explain public static void main(String args[]) in Java.
+    public --> access modifier which makes the main method globally available so that JVM can invoke it outside the class.
+    static --> used so that we can use the main method without initiating the class to avoid unnecessary allocation of the memory
+    void --> return type is void... since main method doesn't return anything
+    String args[] --> stores Java command line arguments and is an array of type java.lang.String class.
+
+7. What is Java String Pool?
+    String pool is a storage area in Java Heap memory where "string literals" are stored.
+    It is also known as "String Constant Pool" or "String Intern Pool".
+    It is privately maintained by Java String class.
+    By default string pool is empty.
+    Concept:
+        String Interning:
+            In computer science, "String Interning" is a method of storing only one copy of every distinct string value, which must be
+            immutable.
+            Interning string makes some string processing tasks more time or space efficient at the cost of requiring more time
+            when the String is created or interned.
+
+8. What will happen if we don't declare the main method as static?
+    main method will not be treated as the entry point of the application.
+
+9. What are packages in Java?
+    A Java package is a group of similar types of classes, interfaces and sub-packages.
+    A Java package organizes Java classes into namespaces, providing a unique namespace for each type it contains.
+    Classes in the same package can access each other's package-private and protected members.
+    There are two types of packages in Java:
+        i) Built-in packages
+        ii) User-defined packages
+
+10. Why packages are used?
+    Packages are used to prevent:
+        Naming Conflicts,
+        Control Access and
+        Make searching/locating and usage of classes, interfaces etc easier.
+
+11. What are the advantages of packages in Java?
+    Packages help you to organize your code, void naming conflicts, and control access to your classes and interfaces.
+
+12. Explain different data types in Java.
+    There are two different types of data types in Java:
+        i) Primitive Data Type: char, int, byte(8 bit signed two's complement integer), boolean, short, long, float, double
+        ii) Non-Primitive Data Type: String, Array, Class, Object, Interface
+
+13. Can we declare pointer in Java?
+    No, Java doesn't provide the support to Pointer.
+    As Java needed to be more secure because of which feature of pointer is not supported in Java.
+
+14. What is the default value of byte datatype in Java?
+    The default value of the byte datatype in Java is 0.
+15. What is the default value of float and double datatype in Java?
+    Default float value -> 0.0f
+    Default double value -> 0.0d
+
+16. What is a wrapper class in Java?
+    A class which wraps around a primitive data type and converts it into an object is called Wrapper class.
+    Wrapper class provides mechanism to convert primitive data type into object and object into primitive.
+    Conversion of primitive to object is called "autoboxing" and the vice-versa is called "unboxing".
+
+    The eight classes of the java.lang package are known as Wrapper classes in Java
+        Primitive Type      Wrapper class
+            boolean             Boolean
+            char                Character
+            byte                Byte
+            short               Short
+            int                 Integer
+            long                Long
+            float               Float
+            double              Double
+
+17. Why do we need wrapper classes?
+    i)   Wrapper classes are final and immutable
+    ii)  Provides methods like valueOf(). parseInt() etc.
+    iii) Provides features of unboxing and autoboxing
+
+    Wrapper classes are beneficial for situations where the program demands working with an object instead of a primitive data type.
+    In that sense, wrapper classes help the Java program to be 100% object-oriented.
+
+18. Difference between instance and local variables?
+    Instance variable: declared outside the method, used throughout the class, has a default value unique to every instance of the class.
+    Local variable: declared within the method, used only withing the scope of method, no default value
+
+19. What is a class variable?
+    Fields/variables that have the static modifier in their declaration are called static fields or class variables.
+    They are associated with the class rather than with any object.
+    Every instance of the class shares a common class variable which is in one fixed location in the memory.
+    If we change the class variable then every instance of the class is affected.
+
+20. What is a static variable?
+    Variables that once declare then only one single copy of the variable is created and shared among all the objects at the class level.
+
+21.    

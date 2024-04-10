@@ -1,0 +1,154 @@
+Develop SQL Queries:
+SQL
+    What: SQL is a computer language that is used to store, manipulate and read data in a structured format.
+    Why: SQL is fast in extracting large amounts of data very efficiently. SQL is flexible as it works with multiple database systems from Oracle, IBM, Microsoft etc.
+    When: When you want consistency across data and when the data is structured around the relationship between tables
+
+Commands:
+    SELECT:- To read/retrieve data
+        {   SELECT * FROM employees                         [To Select all columns]
+            SELECT * FROM employees WHERE id = 1            [To Select all columns but with a filter]
+            SELECT department FROM employees                [To select specified column only]
+            SELECT department, salary FROM employees        [To Select specified columns only]
+            SELECT DISTINCT name FROM employees             [To Select distinct entries only based on some column]
+            SELECT DISTINCT name, department FROM employees [To Select distinct entries only based on some columns]
+            SELECT COUNT(DISTINCT name) FROM employees      [To Get the total count of employees with distinct name]
+        }
+    WHERE:- filter records
+        {   {SELECT * FROM employees  -- The common part : same goes with DELETE and UPDATE also}
+            WHERE name = 'Nitin'
+            WHERE age > 24
+            WHERE age < 30
+            WHERE age >= 20
+            WHERE age <= 30
+            WHERE age != 20 or WHERE age <> 20      [Not equal to variations]
+            WHERE age BETWEEN 20 AND 30
+            WHERE name LIKE '_it%'                  [ _ single character : % 0 to many characters ]{name is at least 3 char long and contains "it" after one char}
+            WHERE name LIKE 'n%'                    [ STARTS WITH n ]
+            WHERE name LIKE '%n'                    [ ENDS WITH n ]
+            WHERE name LIKE '%n%'                   [ CONTAINS n ]
+            WHERE name LIKE 'Nitin'                 [ No Wildcards will return exact match ]
+        }
+    ORDER BY:- sort records
+        {
+            {SELECT * FROM employees  -- The common part}
+            ORDER BY name
+            ORDER BY name ASC
+            ORDER BY name DESC
+            ORDER BY name, department
+            ORDER BY name ASC, department DESC
+        }
+    AND:- filter records with more control
+        {
+            {SELECT * FROM employees WHERE name = 'Nitin'  -- The common part}
+            AND salary > 30
+            AND lastname LIKE 'K%'
+            AND (lastname LIKE 'K%' OR lastname LIKE 'S%')
+        }
+    OR:- filter records
+        {
+            {SELECT * FROM employees WHERE name = 'Nitin'  -- The common part}
+            OR lastname = 'Kumar'
+            OR age > 24
+            OR lastname LIKE 'K%'
+            OR lastname LIKE 'K%' OR age = 27
+        }
+    NOT:- filter records with more control
+        {
+            {SELECT * FROM employees  -- The common part}
+            WHERE NOT name = 'Nitin'
+            WHERE NOT salary > 30000                    [Not Greater Than]
+            WHERE NOT salary < 30000                    [Not Less Than]
+            WHERE name NOT like 'N%'                    [Not Like]
+            WHERE age NOT BETWEEN 30 AND 20             [Not Between]
+            WHERE city NOT IN ('Paris', 'London')       [Not In]
+        }
+
+    INSERT INTO:- To insert new data
+        {
+            Insert into specified columns only
+                INSERT INTO table_name (column1, column2, column3, ...)
+                VALUES (value1, value2, value3, ...);
+
+            Insert into all columns
+                INSERT INTO table_name
+                VALUES (value1, value2, value3, ...);
+
+            Insert Multiple Rows in One Statement
+                INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+                VALUES
+                ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway'),
+                ('Greasy Burger', 'Per Olsen', 'Gateveien 15', 'Sandnes', '4306', 'Norway'),
+                ('Tasty Tee', 'Finn Egan', 'Streetroad 19B', 'Liverpool', 'L1 0AA', 'UK');
+        }
+    NULL VALUES:- null check or null insertion/non-mandatory fields can be set to null only by default
+        {
+            It is not possible to test for NULL values with comparison operators, such as =, <, or <>.
+            We will have to use the IS NULL and IS NOT NULL operators instead.
+
+            SELECT column_names
+            FROM table_name
+            WHERE column_name IS NULL;
+
+            SELECT column_names
+            FROM table_name
+            WHERE column_name IS NOT NULL;
+        }
+
+    UPDATE:- To update data
+        {
+            UPDATE table_name
+            SET column1 = value1, column2 = value2, ...
+            WHERE condition;                                //Be careful: if we omit where clause it will update all of the records
+
+            UPDATE employees SET lastname = 'Singh'
+            WHERE firstname = 'Nitin'
+        }
+    DELETE:- To delete data
+        {
+            DELETE FROM table_name WHERE condition;        //If you omit the WHERE clause, all records in the table will be deleted!
+            DELETE FROM employee WHERE id = 1;              [Delete employee with id 1]
+            DELETE FROM employee;                           [Delete All Records]
+        }
+    TOP(SQL Server), LIMIT(Mysql), FETCH FIRST(Oracle 12) or ROWNUM Clause(Old Oracle):- Retrieve limited set of records|| top
+        {
+            The SELECT TOP clause is used to specify the number of records to return.
+            SELECT TOP 3 * FROM employee;                                   [Select only the first 3 records of the table]
+            SELECT * FROM employee LIMIT 3;                                 [Mysql Syntax]
+            SELECT * FROM employee WHERE department = 'IT' LIMIT 3;         [Mysql Syntax WHERE with LIMIT]
+            SELECT * FROM employee ORDER BY first_name DESC LIMIT 3;        [Mysql Syntax ORDER BY with LIMIT]
+            SELECT * FROM employee FETCH FIRST 3 ROWS ONLY;                 [Oracle Syntax]
+        }
+    MIN() AND MAX() Functions:-
+        {
+            The MIN() function returns the smallest value of the selected column.
+            The MAX() function returns the largest value of the selected column.
+            SELECT MIN(Price)
+            FROM Products;
+        }
+    COUNT():-
+        {
+            The COUNT() function returns the number of rows that matches a specified criterion.
+
+            SELECT COUNT(*) FROM Products;                              [returns total records count in Products table]
+            SELECT COUNT(first_name) FROM employees;                    [returns total records count where first_name is not null from employees]
+            SELECT COUNT(last_name) FROM employees;                     [returns total records count where last_name is not null from employees]
+        }
+    SUM():-
+        {
+            The SUM() function returns the total sum of a numeric column.
+
+            SELECT SUM(Quantity) FROM OrderDetails;                                                     [returns sum of total quantities of order details]
+            SELECT SUM(current_salary) FROM employees WHERE age > 30;                                   [returns sum of current salary of employees older than 30]
+            SELECT SUM(current_salary) as totalITSalary FROM employees WHERE department = 'IT';         [returns total salary of IT employees ]
+        }
+
+    CREATE DATABASE:- To create database
+    ALTER DATABASE:- Modifies a database
+
+    CREATE TABLE:- Creates a new table
+    ALTER TABLE:-
+    DROP TABLE:-
+
+    CREATE INDEX:-
+    DROP INDEX:-

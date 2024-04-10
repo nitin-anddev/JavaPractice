@@ -1,0 +1,27 @@
+Cohesion in Java is the principle of Object-Oriented programming.
+Cohesion is closely related to ensuring that the purpose for which a class is getting created
+in Java is well-focused and single. In other words, the more closely related stuff is grouped
+in a class, the higher will be the cohesiveness.
+
+For better understanding examine CohesiveExample.java in same package and come back later.
+
+CohesiveExample.java class Explanation:
+The above example is a straightforward to understand. There is a class that contains two methods.
+One method is doing the addition of two numbers(an arithmetic operation), and another method focuses
+on vowel and consonants(related to English alphabets). However, no one can give a clear reason why these
+two methods are clubbed together in a single class as there is no relation between vowels or consonants and numbers.
+Therefore, we can say that cohesiveness is missing in the class.
+
+NEED OF COHESIVENESS
+    We need cohesiveness because it is easy to work in a highly cohesive structure.
+    The update and modification in the code become easy.
+    Think about how books are arranges in a library.
+    In a library, we do the categorization of stuff.
+    There is a separate section for each of the different subjects.
+
+    For example, books of biology are placed together, and books of mathematics are placed together.
+    In a library, we do not shuffle books of mathematics and biology. Because it becomes
+    difficult to find a mathematics or biology book.
+    Similarly, we do the categorization of stuff in the programming world also.
+    Shuffling of unrelated stuff is avoided in the code.
+    In fact, it is impossible to work on a code where cohesiveness within the class is ignored.

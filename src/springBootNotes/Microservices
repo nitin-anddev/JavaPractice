@@ -1,0 +1,46 @@
+Q: What is meant by microservices?
+A: Microservices are an architectural and organizational approach to software development where
+    software is composed of small independent services that communicate over well-defined APIs.
+    These services are owned by small, self-contained teams.
+
+Q: What are microservices?
+A: Microservices - also known as the microservice architecture is an architectural style that structures
+    an application as a collection of services that are:
+        1. Independent deployable
+        2. Loosely coupled
+        3. Organized around business capabilities
+        4. Owned by a small team
+    The microservice architecture enables an organization to deliver large, complex applications rapidly,
+    frequently, reliably and sustainably - a necessity for competing and winning in today's world.
+
+Q: When will you choose microservices pattern?
+A: When you outgrow your monolithic architecture:
+    Let's imagine that you are responsible for a critical business application that has a monolithic
+    architecture and you are struggling to meet the needs of the business.
+    Should you consider migrating to a microservice architecture?
+    The short answer is that it depends.
+
+    It's important to make the most of your monolithic architecture, e.g. adopt DevOps, and reorganize
+    into loosely coupled, small teams.
+    In many cases, once you have embraced the success triangle, your monolithic architecture is sufficiently
+    loosely coupled, testable and deployable to enable rapid software delivery.
+
+    But sometimes an application can outgrow its monolithic architecture and become an obstacle to rapid, frequent
+    and reliable software delivery. This typically happens when the application becomes large and complex
+    and its developed by many teams.
+    For example, its deployment pipeline become a bottleneck.
+    When this occurs, you should consider migrating to microservices.
+
+Q: How to design a microservice architecture?
+A: Picking technologies - Kubernetes, message broker etc is important.
+    But what's critically important is designing a good service architecture:
+    identifying services; defining their responsibilities; their APIs and collaborations.
+    If you get it wrong you risk creating a distributed monolith, which will slow down
+    software delivery.
+
+    What's more, designing the service architecture is challenging because it's a
+    creative activity - not something you can buy, download or read in a manual.
+    Assemblage is an architecture definition process that you can use to define your microservice
+    architecture. It distills your requirements into system operations and subdomains; uses the dark
+    energy and dark matter forces to group the subdomains into services; and designs the distributed
+    system operations.

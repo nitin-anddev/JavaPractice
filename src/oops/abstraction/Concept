@@ -1,0 +1,76 @@
+Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+
+It shows only essential things to the user and hides the internal details.
+For example, sending SMS where you type the text and send the message.
+You don't know the internal processing about the message delivery.
+
+WAYS TO ACHIEVE ABSTRACTION
+    There are two ways to achieve abstraction in Java
+        1. Abstract class (0 to 100%)
+        2. Interface(100%)
+
+    ABSTRACT CLASS
+        A class which is declared as abstract is known as an abstract class. It can have abstract and
+        non-abstract methods. It needs to be extended and its method implemented.
+        It cannot be instantiated
+        POINTS TO REMEMBER:
+            An abstract class must be declared with an abstract keyword.
+            It can have abstract and non-abstract methods.
+            It cannot be instantiated.
+            It can have constructors and static methods also.
+            It can have final methods which will force the subclass not to change the body of the method.
+
+        ABSTRACT METHOD
+            A method which is declared as abstract and does not have implementation is known as an abstract method.
+            Example:
+                abstract void printStatus(); //no method body and abstract keyword
+
+
+    INTERFACE:
+        An interface in Java is a blueprint of a class. It has static constants and abstract methods.
+        The interface in Java is a mechanism to achieve abstraction.
+        There can be only abstract methods in the Java interface, not method body.
+        It is used to achieve abstraction and multiple inheritance in Java.
+
+        In other words, you can say that interfaces can have abstract methods and variables. It
+        cannot have a method body.
+        Java interface also represents the IS-A relationship.
+
+        It cannot be instantiated just like the abstract class.
+
+        Since Java 8, we can have default and static methods in an interface.
+        Since Java 9, we can have private methods in an interface.
+
+        WHY USE JAVA INTERFACE?
+            There are mainly three reasons to use interface. They are given below.
+                It is used to achieve abstraction.
+                By interface, we can support the functionality of multiple inheritance.
+                It can be used to achieve loose coupling.
+
+        SYNTAX
+            interface <interface_name>{
+                //declare constant fields
+                //declare methods that abstract
+                //by default
+            }
+
+        INTERNAL ADDITION BY THE COMPILER
+            Java compiler adds public and abstract keywords before the interface method.
+            Moreover, it adds public, static and final keywords before data members.
+            Example: Printable.java
+                interface Printable{
+                    int MIN = 5;
+                    void print();
+                }
+                after compilation
+                Printable.class
+                interface Printable{
+                    public static final int MIN = 5;
+                    public abstract void print();
+                }
+
+        RELATIONSHIP BETWEEN CLASSES AND INTERFACES
+            A class extends another class
+            An interface extends another interface
+            But a class implements an interface
+

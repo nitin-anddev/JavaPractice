@@ -1,0 +1,51 @@
+Polymorphism is the ability of an object to take on different forms.
+
+In Java, polymorphism refers to the ability of a class to provide different implementations of a method,
+depending on the type of object that is passed to the method.
+
+All the Java objects are polymorphic.
+
+Polymorphism occurs when there is inheritance, i.e., many classes are related.
+
+Inheritance lets one class acquire the properties and attributes of another class.
+Polymorphism allows us to use these inherited properties to perform different tasks.
+Thus, allowing us to achieve the same action in many different ways.
+
+REAL LIFE EXAMPLES OF POLYMORPHISM
+An individual can have different relationships with different people.
+A woman can be a mother, a daughter, a sister and a friend, all at the same time, i.e.
+she performs other behaviors in different situations.
+
+Human -> Man [Son, Husband, Father, Cousin, Brother]
+      -> Woman[Daughter, Wife, Mother, Cousin, Sister]
+
+The human body has different organs. Every organ has a different function to perform;
+the heart is responsible for blood flow, the lungs for breathing, the brain for cognitive activity,
+and the kidneys for excretion. So we have a standard method function that performs differently
+depending upon the organ of the body.
+
+Organ -> Heart
+      -> Lungs
+      -> Brain
+      -> Kidneys etc.
+
+Extending a class is Polymorphism
+Overriding methods is Polymorphism
+Overloading methods is Polymorphism
+
+TYPES
+There are two types of Polymorphism
+    1. Method Overloading [Multiple methods of the same name in the same class, and all the methods work in different ways.]
+    2. Method Overriding [When a subclass or a child has the same method as declared in the parent class with different implementation]
+
+CLASSIFICATION
+Polymorphism in Java can be classified into two types
+    1. Static/Compile-Time Polymorphism [Achieved through Method Overloading]
+    2. Dynamic/Runtime Polymorphism [Also known as Dynamic Binding or Dynamic Method Dispatch {Achieved through Method Overriding}]
+
+UPCASTING
+    Upcasting takes place when the Parent class’s reference variable refers to the object of the child class. For example:
+
+    class A{}
+    class B extends A{}
+    A a=new B(); //upcasting

@@ -1,0 +1,150 @@
+1. Intro to SQL
+    * Definition
+    * Purpose
+    * Relational DBs
+    * DBMS - Database Management System
+
+2. Basic SQL Syntax
+    * SELECT
+    * FROM
+    * WHERE
+    * ORDER BY
+    * GROUP BY
+
+3. Data Types
+    * Integer
+    * Floating-Point
+    * Character
+    * Date
+    * VARCHAR
+    * TEXT
+    * BLOB
+    * BOOLEAN
+
+4. Sub Languages
+    * DML
+    * DDL
+    * DQL
+    * DCL
+    * TCL
+
+5. Data Manipulation
+    * INSERT
+    * UPDATE
+    * DELETE
+
+6. Data Definition
+    * CREATE
+    * ALTER
+    * DROP
+    * Indexes
+
+7. Query Filtering & Sorting
+    * WHERE
+    * AND
+    * OR Conditions
+    * Ascending
+    * Descending
+
+8. Data Aggregation
+    * SUM
+    * AVG
+    * COUNT
+    * MIN
+    * MAX
+
+9. Joins & Relationships
+    * INNER JOIN
+    * LEFT JOIN
+    * RIGHT JOIN
+    * Self Joins
+    * Cross Joins
+    * FULL OUTER JOIN
+
+10. Sub queries
+    Sub queries used in
+        * Filtering data
+        * Aggregating data
+        * Joining tables
+        * Correlated sub queries
+
+11. Views
+    * Creating
+    * Modifying
+    * Dropping Views
+
+12. Transactions
+    * ACID Properties
+    * COMMIT
+    * ROLLBACK
+    * SAVEPOINT
+    * ROLLBACK TO SAVEPOINT
+
+13. Stored Procedures
+    * CREATE PROCEDURE
+    * ALTER
+    * DELETE
+    * EXECUTE
+    * User-Defined Functions (UDFs)
+
+14. Triggers
+    * Trigger Events
+    * Trigger Execution & Syntax
+
+15. Security & Permissions
+    * CREATE USER
+    * GRANT
+    * REVOKE
+    * ALTER USER
+    * DROP USER
+
+16. Optimizations
+    * Indexing Strategies
+    * Query Optimization
+
+17. Normalization
+    * 1NF(Normal Form)
+    * 2NF
+    * 3NF
+    * BCNF
+
+18. Backup and Recovery
+    * Database Backups
+    * Point-in-time Recovery
+
+19. NoSQL Databases
+    * MongoDB
+    * Cassandra..etc
+    * Key differences
+
+20. Data Integrity
+    * Primary Key
+    * Foreign Key
+
+21. Advanced SQL Queries
+    * Window Functions
+    * Common Table Expressions (CTEs)
+
+22. Full-Text Search
+    * Full-Text Indexes
+    * Search Optimization
+
+23. Data Import & Export
+    * Importing & Exporting Data(CSV, JSON)
+    * Using SQL Dump Files
+
+24. Database Design
+    * Entity-Relationship Diagrams(ERDs)
+    * Normalization Techniques
+
+25. Advanced Indexing
+    * Composite Indexes
+    * Covering Indexes
+
+26. Database Transactions
+    * Save points and Nested Transactions
+    * Two-Phase Commit Protocol
+
+27. Performance Tuning
+    * Query Profiling
+    * Query Cache Optimization

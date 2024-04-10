@@ -1,0 +1,82 @@
+
+
+Responsible for the design, development, testing, and analysis of modules or features for Services automation tools.
+Develops and/or executes implementation according to project plans and priorities.
+Works on programming overall solutions and designing solutions to support the tools.
+
+Follow UI/UX best practices and techniques
+
+Design, develop, and implement enterprise applications using Java and SQL.
+
+--Develop SQL queries, stored procedures, functions, triggers
+
+Provide technical capability in the areas of programming, architecture, design, testing, and implementation
+
+Support consultants on technical questions or issues
+
+Troubleshoot and debug applications issues and provide timely resolutions
+
+--Optimize database queries for maximum performance.
+
+--Implement coding and deployment best practices
+
+--Ensure quality of code by performing unit tests and code reviews.
+
+Collaborate with teammates on development projects
+
+
+Qualification :
+
+• BS/MS in Computer Science or equivalent.
+
+2+ years of professional experience designing, and programming Java-based web applications
+
+--Java & Java 8(Stream API, Optional Class, Functional Interface or SAM)
+
+--Proficiency in writing SQL scripts for MSSQL and Oracle databases
+
+--Proficiency in developing stored procedures using PL/SQL or Transact-SQL
+
+Strong organizational, problem-solving and analytical skills
+
+Experience in creating and conducting usability tests
+
+--Experience with modern frameworks, building tools, databases, and technologies
+
+Understanding of product management and software engineering protocols
+
+--Some proficiency working with diagramming and prototyping software, as well as familiarity with front-end code and web/mobile-based environments
+
+Strong eye for visual and interaction design
+
+--Good understanding of the software development lifecycle and associated processes
+
+--Must have a grasp of Agile and Lean development methodologies.
+
+
+-->concept of normalization
+--> top 5 employee salary
+
+--> features java 8:
+    Stream API,
+    Collection API improvements,
+    Functional Interface(SAM),
+    default method in stream
+
+-->JDBC connection
+-->Hikari connection
+
+--> stream api map
+--> method reference
+
+--> jdbc --connection pooling
+--> @transactional, @qualifier, @primary
+
+--> optimization of api
+    minimize database calls,
+    caching can be implemented
+    or not join unnecessary,
+--> caching implementation
+-->@Component, @Autowired, @Transactional, @Value, @Repository,
+--> already available jpa methods
+--> Design patterns

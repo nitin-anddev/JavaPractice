@@ -1,0 +1,24 @@
+Encapsulation in Java is the process by which data(variables) and the code that acts upon them(methods)
+are integrated as a single unit. By encapsulating a class's variables, other classes cannot access them,
+and only the methods of the class can access them.
+
+NEED
+    Encapsulation improvises the procedure of coding to a whole new level.
+    We need encapsulation in Java for various reasons. They are stated below
+        1. Better Control
+        2. Getter and Setter
+        3. Security
+        4. Flexibility
+
+Java Bean class is the example of a fully encapsulated class\
+
+ADVANTAGES
+    By providing only setter or getter method, you can make class read-only or write-only.
+    Encapsulation provides you control over the data. Suppose you want to set the value of id which should be
+    greater than 100 only, you can write the logic inside setter method. You can write the logic not to store
+    negative numbers in the setter methods.
+
+    It is a way to achieve data hiding in Java because other class will not be able to access the
+    data through the private data members.
+
+    The encapsulate class is easy to test. So, it is better for unit testing.

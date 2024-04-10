@@ -1,0 +1,104 @@
+1. What is lazy operational in Java8
+    Stream is lazy operation in Java 8 because the intermediate opeartion is not evaluted until the terminal operator is not executed.
+2. How to access immutable class in Java?
+    Creating an object works here: String myString = "Nitin Kumar";
+3. Modes of AutoWiring in Spring
+    There are theree modes of Autowiring: 1. Using @Autowired 2. Passing dependencies as param in Class Constructor, 3. Using setter methods
+4. Work of Stack Memory in Java
+    Stack Memory in Java is used for static memory allocation and the execution of a thread.
+    It contains primitive values that are specific to a method and references to objects referred from the method that are in a heap.
+    Access to this memory is in Last-In-First-Out (LIFO) order.
+5. Types of Memory in JDK
+    There are two types of memory in Java – stack memory and heap memory.
+    Stack memory is the physical space or the RAM assigned to various Java objects during the run time.
+    The stack memory contains short-lived, method-specific values.
+    Heap memory is the area in which all Java objects reside. The heap space is further divided into several generations. The Young generation heap space is the place that stores new objects.
+    Next is the old generation. The objects in the young generation have a timeline. When the timeline gets over, the objects are moved to the old generation.
+    Last is the permanent generation, where the metadata for runtime classes and application methods is stored.
+6. What is immutable class?
+7. Default functional interface in Java 8
+8. What is serializable interface?
+9. Why wait is in object class?
+10. How to break singleton design pattern?
+11. Difference between Query Param and Path Variable?
+12. Difference between Put and Patch?
+13. Difference between get and load method in JPA?
+14. What is class not found exception and no class definition found error difference and root cause?
+15. How to maintain transaction in SpringBoot?
+16. Disadvantage of Stream API
+17. Intermediate and terminal operator
+18. Java 8 features
+19. What is lambda function?
+20. What is functional interface and default interface in Java 8
+21. Java 8 program to fetch the deptList by using groupingBy method
+22. Java 8 program topring the result of employeeName and employeeSalary
+23. Java 8 program topring the result of employeeName and employeeSalary is greater than 30000
+24. What is constructor and what is the use of constructor?
+25. What is static and final?
+26. Join queries in sql?
+27. @Autowire, @Service and @Controller
+28. HashMap internal working
+29. Difference between HashMap and concurrent hashmap?
+30. What is bean scope?
+31. == and equals method difference
+32. How to avoid thread safe in hashmap?
+33. Comparable and comparator difference
+34. Producer consumer problem
+35. Difference between list and set
+36. Difference between array and arraylist
+37. Difference between vector and arrayList
+38. Difference between linkedList and arrayList
+39. How to create Optional class in Java and what is the use and its method
+40. How to resolve memory leakage issue
+41. When to use ArrayList and when linkedList
+42. Hash code and equals method difference and when we use
+43. String Pool
+44. Map and FlatMap difference
+45. Generic class how to prevent a class to create an object
+46. How to create composite primary key in JPA
+47. What is Actuator?
+48. What is Auto configuration in SpringBoot?
+49. @Qualifier and @Primary
+50. JDK Architecture
+51. Why we use Stream over loop
+52. @Autowire, @Qualifier, @Primary
+53. Why String is immutable?
+54. Why we are using REST API over SOAP Request?
+55. What is predicates, functions and by-function in Java 8
+56. @RequestMapping, @RequestParam, @PathVariable
+57. How to enable second level cache in JPA?
+58. Program to find anagrams for the given input(Fired, Fried)?
+59. Program to remove the duplicate characters
+60. How to communicate between two microservices
+61. Fault tolerance
+62. How to make perfect immutable class?
+63. What is method reference in Java 8?
+64. How many argument we can pass in predicates?
+65. Can we make employee class object as key in hashmap and how we can manage?
+66. Can we implement two interface in class?
+67. What is solid principles?
+68. Design pattern?
+69. If we make ArrayList as final can we modify the elements in that?
+70. Session and SessionFactory
+71. Synchronization and Serialization
+72. What is marker interface?
+73. Transient keyword
+74. Volatile keyword
+75. Enum key keyword
+76. How to create singleton class in multithreaded environment
+77. How can we handle custom exception in SpringBoot?
+78. Find the duplicate employeeName in given list
+79. Java 8 program to find the employeeName starts with A and salary is greater than 500000?
+80. How can we configured cirkuit breaker code
+81. Kafka configuration
+82. Hibernate configuration
+83. Difference between String and StringBuffer
+84. Difference between String builder and String Buffer
+85. Collection Hierarchy
+86. Exception Hierarchy
+87. Executor Service
+88. Abstract and interface
+89. Garbase Collection
+90. Daemon Thread
+91. Java problem for even odd with two thread
+
